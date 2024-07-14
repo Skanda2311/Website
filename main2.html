@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Uma Rani's Recovery</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header, .footer, .content {
+            margin-bottom: 20px;
+        }
+        .header {
+            text-align: center;
+            background-color: #e9f5ff;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 21;
+            min-width: 300px;
+            padding: 20px;
+            text-align: justify;
+        }
+        .content h2 {
+            font-size: 22px;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 0 0 8px 8px;
+        }
+        .footer .social-icons img {
+            height: 20px;
+            margin: 0 5px;
+        }
+        /* Slider Styles */
+        .slider {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .slider img {
+            width: 100%;
+            height: 300px; /* Adjust the height as per your design */
+            object-fit: contain; /* Ensures the image covers the entire area */
+            border-radius: 8px; /* Adds rounded corners */
+        }
+        /* Video Player Styles */
+        .video-container {
+            width: 100%;
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+            background-color: #000;
+            border-radius: 8px; /* Rounded corners */
+            overflow: hidden;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        .video-controls button {
+            color: white;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        /* Two Columns Layout */
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .two-columns .column {
+            flex: 1;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .two-columns .column {
+                flex: 100%; /* Stack columns vertically on smaller screens */
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Support Uma Rani's Recovery</h1>
+        </div>
+
+        <div class="content">
+            <div class="column">
+                <h2>About Us</h2>
+                <p>Hello, my name is Vasanth. This video of a tragic accident where a large trunk fell on a lady in Tirumala, Tirupati. That lady is my beloved wife, Uma Rani. We are from Bangalore, and this incident has turned our lives upside down.</p>
+
+                <h2>The Incident</h2>
+                <p>On July 10, 2024, we visited the Japali Temple in Tirumala, Tirupati. Unfortunately, a terrible accident occurred where a large trunk fell on Uma Rani, causing severe injuries. She was immediately admitted to Sri Venkateshwara Institute of Medical Science (SVIMS), thanks to the quick actions of the Tirumala Tirupati Devasthanam’s board (TTD). They have been incredibly supportive, ensuring she received critical spinal cord surgery that saved her life. However, the surgery left her paralyzed.</p>
+
+                <h2>Our Situation</h2>
+                <p>I have been retired for two years, and Uma Rani was the backbone of our family's finances. Her current condition has left us in a difficult situation, both emotionally and financially. We are now facing the enormous challenge of her recovery and the associated medical expenses and recovery back to normal.</p>
+            </div>
+            <div class="column">
+                <h2>How You Can Help</h2>
+                <p>We are seeking financial assistance for Uma Rani's recovery surgery and ongoing medical care. If you would like to help us during this challenging time, please consider making a direct contribution to the patient account number provided below. This ensures that your support goes directly towards Uma Rani's medical expenses without any confusion or risk of scams.</p>
+                <p class="account-holder-name"><strong> AccountHolder's Name: 656902010011097</strong></p>
+                <p class="account-number"><strong>Account Number: 656902010011097</strong></p>
+                <p class="ifsc-code"><strong>IFSC Code: UBIN0565695</strong></p>
+                <p class="bank-name"><strong>Bank Name: UNION BANK OF INDIA</strong></p>
+
+                <h2>Stay Updated</h2>
+                <p>We are committed to keeping all our supporters updated on Uma Rani's health and progress. Regular updates will be posted here to ensure transparency and to show our gratitude for your kindness and generosity.</p>
+
+                <h2>Thank You</h2>
+                <p>From the bottom of our hearts, thank you for your support and prayers. Your generosity gives us hope and strength to face the challenges ahead.</p>
+            </div>
+        </div>
+
+        <!-- Two Columns Section -->
+        <div class="two-columns">
+            <!-- Video Column -->
+            <div class="column">
+                <div class="video-container">
+                    <video id="videoPlayer" controls>
+                        <source src="videos/1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-controls">
+                        <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Slider Column -->
+            <div class="column">
+                <div class="slider">
+                    <div><img src="images/1.jpg" alt="image unavailable"></div>
+                    <div><img src="images/2.jpg" alt="image unavailable"></div>
+                    <div><img src="images/3.jpg" alt="image unavailable"></div>
+                    <div><img src="images/4.jpg" alt="image unavailable"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="footer">
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div> -->
+            <p>© 2024 Support Uma Rani's Recovery. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Slick Slider JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+
+        // Video Controls JavaScript
+        var video = document.getElementById("videoPlayer");
+        var playPauseBtn = document.getElementById("playPauseBtn");
+
+        function togglePlayPause() {
+            if (video.paused || video.ended) {
+                video.play();
+                playPauseBtn.textContent = "Pause";
+            } else {
+                video.pause();
+                playPauseBtn.textContent = "Play";
+            }
+        }
+
+        video.onended = function() {
+            playPauseBtn.textContent = "Play";
+        };
+
+        video.onplay = function() {
+            playPauseBtn.textContent = "Pause";
+        };
+
+        video.onpause = function() {
+            playPauseBtn.textContent = "Play";
+        };
+    </script>
+</body>
+</html>
