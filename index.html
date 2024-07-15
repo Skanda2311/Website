@@ -124,6 +124,7 @@
         /* Flexbox for Bank Details and QR Code */
         .bank-details {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin-top: 20px;
         }
@@ -137,6 +138,16 @@
         .qr-code img {
             width: 200px; /* Adjust the size as needed */
             height: 200px;
+        }
+        @media (max-width: 768px) {
+            .bank-details {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .qr-code {
+                margin-left: 0;
+                margin-top: 20px;
+            }
         }
     </style>
 </head>
@@ -152,26 +163,26 @@
                 <p>Hello, my name is Vasanth Angya. This video of a tragic accident where a large trunk fell on a lady in Tirumala, Tirupati. That lady is my beloved wife, Uma Rani. We are from Bangalore, and this incident has turned our lives upside down.</p>
 
                 <h2>The Incident</h2>
-                <p>On July 10, 2024, we visited the Japali Temple in Tirumala, Tirupati. Unfortunately, a terrible accident occurred where a large trunk fell on Uma Rani, causing severe injuries. She was immediately admitted to Sri Venkateshwara Institute of Medical Science (SVIMS), thanks to the quick actions of the Tirumala Tirupati Devasthanam’s board (TTD). TTD  assisted us with immediate medical assistance and have been incredibly supportive, ensuring she receives a critical spinal cord surgery that helped her to come out of danger zone for free of cost. However , due to the multiple injuries in the spinal cord, she is now paralyzed and there are chances of recovery if we take the right care post the surgery</p>
+                <p>On July 10, 2024, we visited the Japali Temple in Tirumala, Tirupati. Unfortunately, a terrible accident occurred where a large trunk fell on Uma Rani, causing severe injuries. She was immediately admitted to Sri Venkateshwara Institute of Medical Science (SVIMS), thanks to the quick actions of the Tirumala Tirupati Devasthanam’s board (TTD). TTD assisted us with immediate medical assistance and have been incredibly supportive, ensuring she receives a critical spinal cord surgery that helped her to come out of danger zone for free of cost. However, due to the multiple injuries in the spinal cord, she is now paralyzed and there are chances of recovery if we take the right care post the surgery.</p>
 
                 <h2>Our Situation</h2>
                 <p>I have been retired for more than 4 years, and Uma Rani was the backbone of our family's finances. Her current condition has left us in a difficult situation, both emotionally and financially. We are now facing the enormous challenge of her post-surgery recovery and the associated medical expenses for her recovery back to normal.</p>
             </div>
             <div class="column">
                 <h2>Ways to Support</h2>
-                <p>We are seeking financial assistance for Uma Rani's post-surgery recovery  and ongoing medical care. If you would like to help us during this challenging time, please consider making a direct contribution to the patient account number provided below. This ensures that your support goes directly towards Uma Rani's medical expenses without any confusion or risk of scams.</p>
-                
+                <p>We are seeking financial assistance for Uma Rani's post-surgery recovery and ongoing medical care. If you would like to help us during this challenging time, please consider making a direct contribution to the patient account number provided below. This ensures that your support goes directly towards Uma Rani's medical expenses without any confusion or risk of scams.</p>
+
                 <div class="bank-details">
                     <div class="bank-info">
                         <p class="account-holder's-name"><strong>Account Holder's Name: V Uma Rani</strong></p>
                         <p class="account-number"><strong>Account Number: 656902010011097</strong></p>
                         <p class="ifsc-code"><strong>IFSC Code: UBIN0565695</strong></p>
                         <p class="bank-name"><strong>Bank Name: UNION BANK OF INDIA</strong></p>
-                        <p class="upi-id"><strong>UPI ID: umaranivasanth@okicici</strong></p>
+                        <p class="upi-id"><strong>UPI Id: umaranivasanth@okicici</strong></p>
                         <p class="phone-number"><strong>Phone Number: 8660856590</strong></p>
                     </div>
                     <div class="qr-code">
-                        <img src="7.jpg" alt="QR Code">
+                        <img src="7.jpg" alt="QR Code for Payment">
                     </div>
                 </div>
 
@@ -201,16 +212,16 @@
             <!-- Image Slider Column -->
             <div class="column">
                 <div class="slider">
-                    <div><img src="1.jpg" alt="image unavailable"></div>
-                    <div><img src="3.jpg" alt="image unavailable"></div>
-                    <div><img src="2.jpg" alt="image unavailable"></div>
-                    <div><img src="4.jpg" alt="image unavailable"></div>
+                    <div><img src="1.jpg" alt="Image 1"></div>
+                    <div><img src="3.jpg" alt="Image 3"></div>
+                    <div><img src="2.jpg" alt="Image 2"></div>
+                    <div><img src="4.jpg" alt="Image 4"></div>
                 </div>
             </div>
         </div>
 
-        <!-- <div class="footer">
-            <div class="social-icons">
+        <div class="footer">
+            <!-- <div class="social-icons">
                 <a href="#"><img src="facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="twitter.png" alt="Twitter"></a>
                 <a href="#"><img src="instagram.png" alt="Instagram"></a>
