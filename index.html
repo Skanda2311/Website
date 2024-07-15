@@ -40,7 +40,7 @@
             flex-wrap: wrap;
         }
         .column {
-            flex: 21;
+            flex: 1;
             min-width: 300px;
             padding: 20px;
             text-align: justify;
@@ -120,6 +120,24 @@
                 max-width: 100%;
             }
         }
+
+        /* Flexbox for Bank Details and QR Code */
+        .bank-details {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .bank-info {
+            flex: 1;
+        }
+        .qr-code {
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+        .qr-code img {
+            width: 200px; /* Adjust the size as needed */
+            height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -142,12 +160,20 @@
             <div class="column">
                 <h2>Ways to Support</h2>
                 <p>We are seeking financial assistance for Uma Rani's post-surgery recovery  and ongoing medical care. If you would like to help us during this challenging time, please consider making a direct contribution to the patient account number provided below. This ensures that your support goes directly towards Uma Rani's medical expenses without any confusion or risk of scams.</p>
-                <p class="account-holder's-name"><strong> AccountHolder's Name: V Uma Rani</strong></p>
-                <p class="account-number"><strong>Account Number: 656902010011097</strong></p>
-                <p class="ifsc-code"><strong>IFSC Code: UBIN0565695</strong></p>
-                <p class="bank-name"><strong>Bank Name: UNION BANK OF INDIA</strong></p>
-                <p class="upi-id"><strong>Upi Id: umaranivasanth@okicici</strong></p>
-                <p class="Phone-number"><strong>Phone Number: 8660856590</strong></p>
+                
+                <div class="bank-details">
+                    <div class="bank-info">
+                        <p class="account-holder's-name"><strong>Account Holder's Name: V Uma Rani</strong></p>
+                        <p class="account-number"><strong>Account Number: 656902010011097</strong></p>
+                        <p class="ifsc-code"><strong>IFSC Code: UBIN0565695</strong></p>
+                        <p class="bank-name"><strong>Bank Name: UNION BANK OF INDIA</strong></p>
+                        <p class="upi-id"><strong>UPI ID: umaranivasanth@okicici</strong></p>
+                        <p class="phone-number"><strong>Phone Number: 8660856590</strong></p>
+                    </div>
+                    <div class="qr-code">
+                        <img src="7.jpg" alt="QR Code">
+                    </div>
+                </div>
 
                 <h2>Stay Updated</h2>
                 <p>We are committed to keeping all our supporters updated on Uma Rani's health and progress. Regular updates will be posted here to ensure transparency and to show our gratitude for your kindness and generosity.</p>
